@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Sito Moderno</title>
+  <style>
+    /* Reset base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #4CAF50, #2E8B57);
+      color: white;
+      padding: 2em 0;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 0.2em; }
+    header p { font-size: 1.2em; }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      background-color: #2E8B57;
+      padding: 1em 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Sections */
+    section { padding: 4em 2em; text-align: center; }
+    section:nth-child(even) { background-color: #f4f4f9; }
+
+    h2 { margin-bottom: 1em; color: #2E8B57; }
+    p { max-width: 700px; margin: 0 auto 1em auto; }
+
+    /* Pulsante moderno */
+    button {
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      border: none;
+      border-radius: 25px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background-color: #45a049; }
+
+    /* Footer */
+    footer {
+      background-color: #2E8B57;
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav { flex-direction: column; gap: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Il Mio Sito Moderno</h1>
+    <p>Un sito semplice ma elegante, pronto da pubblicare</p>
+  </header>
+
+  <nav>
+    <a href="#about">Chi Siamo</a>
+    <a href="#services">Servizi</a>
+    <a href="#contact">Contatti</a>
+  </nav>
+
+  <section id="about">
+    <h2>Chi Siamo</h2>
+    <p>Siamo un team appassionato di tecnologia e design, impegnato a creare siti web moderni e facili da usare.</p>
+    <button onclick="alert('Grazie per averci visitato!')">Clicca qui!</button>
+  </section>
+
+  <section id="services">
+    <h2>Servizi</h2>
+    <p>Offriamo sviluppo web, design grafico e consulenza digitale. Trasformiamo le idee in progetti concreti.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contatti</h2>
+    <p>Puoi contattarci tramite email o telefono, oppure seguirci sui social per rimanere aggiornato.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Il Mio Sito Moderno. Tutti i diritti riservati.
+  </footer>
+
+</body>
+</html>

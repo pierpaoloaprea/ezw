@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierp - Psicologia, Arte e Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pierpaolo "Pierp" Aprea</h1>
+        <p>Psicologia • Disciplina • Costanza • Pianoforte • Arte • Calisthenics • Palestra</p>
+        <nav>
+            <a href="#psicologia">Psicologia</a>
+            <a href="#musica">Pianoforte</a>
+            <a href="#arte">Arte</a>
+            <a href="#fitness">Fitness</a>
+            <a href="#frasi">Frasi di Pierp</a>
+        </nav>
+    </header>
+
+    <section id="psicologia">
+        <h2>Psicologia & Disciplina</h2>
+        <p>Condivido riflessioni e strategie per migliorare la mente, aumentare la disciplina e coltivare la costanza nella vita quotidiana.</p>
+    </section>
+
+    <section id="musica">
+        <h2>Pianoforte</h2>
+        <p>Momenti musicali e lezioni di pianoforte per ispirarti a suonare e creare emozioni con la musica.</p>
+    </section>
+
+    <section id="arte">
+        <h2>Arte</h2>
+        <p>Disegno, pittura e creatività visiva: un mondo di ispirazioni artistiche da esplorare insieme.</p>
+    </section>
+
+    <section id="fitness">
+        <h2>Calisthenics & Palestra</h2>
+        <p>Allenamenti, consigli e routine per crescere fisicamente e mentalmente attraverso il movimento e la disciplina.</p>
+    </section>
+
+    <section id="frasi">
+        <h2>Frasi di Pierp</h2>
+
+        <div class="frase">
+            <p class="citazione">“Senti il movimento, e sii in movimento.”</p>
+            <p class="spiegazione">Significa imparare un gesto, un’azione o un’abilità così profondamente da farlo diventare naturale, come se fosse memorizzato nel corpo. Non si tratta solo di muoversi, ma di percepire ogni dettaglio del movimento: il ritmo, la direzione, la forza, il timing. Quando conosci davvero il movimento, puoi agire senza esitazione, con sicurezza e fluidità. In altre parole, “sentire” il movimento vuol dire comprendere e interiorizzare ciò che fai, e “essere in movimento” significa trasformare questa conoscenza in azione concreta e consapevole.</p>
+            <p class="autore">— Pierp</p>
+        </div>
+
+        <div class="frase">
+            <p class="citazione">“Temere il peggio per le altre persone, non farà altro che migliorarle.”</p>
+            <p class="spiegazione">Temere il peggio per gli altri non significa augurare loro del male, ma riconoscere che le difficoltà, reali o immaginate, sono occasioni di crescita. Il “peggio” non è la fine, bensì una prova che spinge le persone a scoprire nuove risorse interiori, a rafforzarsi e a diventare migliori. In questo senso, anche la paura del peggio può trasformarsi in uno stimolo positivo.</p>
+            <p class="autore">— Pierp</p>
+        </div>
+
+        <div class="frase">
+            <p class="citazione">“Un energy drink, un PC, e il gioco è fatto.”</p>
+            <p class="spiegazione">Prendi un sorso di energia, accendi il PC e sei pronto a studiare come mai prima. Ogni sorso ti dà carica per concentrarti, imparare tante cose e sviluppare un pensiero critico potente. Con questo mix di energia e strumenti, nulla ti ferma: studiare diventa più facile, stimolante e produttivo.</p>
+            <p class="autore">— Pierp</p>
+        </div>
+
+        <div class="frase">
+            <p class="citazione">“Sentiti osservato quando sei solo, sentiti inosservato quando sei in pubblico.”</p>
+            <p class="spiegazione">Quando ti senti osservato anche da solo, ti spingi a fare le cose con cura e professionalità, come se qualcuno stesse sempre guardando il tuo lavoro. Al contrario, sentirti inosservato in pubblico ti permette di muoverti con naturalezza, senza paura del giudizio altrui. In questo modo sviluppi disciplina, attenzione e sicurezza, trovando l’equilibrio tra precisione e spontaneità.</p>
+            <p class="autore">— Pierp</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Seguimi su Instagram: <a href="https://www.instagram.com/" target="_blank">@pierp</a></p>
+        <p>&copy; 2025 Pierpaolo Aprea</p>
+    </footer>
+
+    <!-- Script per animazioni al scroll -->
+    <script>
+        const sections = document.querySelectorAll('section, .frase, footer');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
